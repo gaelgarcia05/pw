@@ -1,0 +1,140 @@
+.font-size {
+    font-size: 2.2rem !important;
+    margin-right: 1rem;
+}
+
+.centrar {
+    justify-content: space-around;
+}
+
+.carrito {
+    display: flex;
+    align-items: center;
+}
+
+.carrito img {
+    max-height: 3rem;
+    margin-left: 1rem;
+}
+
+
+.alinear {
+    padding: .5rem 0;
+    align-items: center;
+}
+
+.alinear-navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-main-carrito {
+    padding: 1rem 0 45rem 0;
+}
+
+.site-main-carrito h4 {
+    text-align: left;
+    margin: 3rem 2rem;
+    font-weight: 700;
+}
+
+.subtotal {
+    width: 30rem;
+}
+
+.site-main-carrito h1 {
+    text-align: left;
+    margin: 2rem;
+}
+
+.lista-productos-carrito {
+    background: #ffffff00 radial-gradient(ellipse at top left,#b466d229 0,#f9db98 80%);
+    width: 80rem;
+    border-radius: 2rem;
+}
+
+.lista-productos-carrito img {
+    width: 15rem;
+    margin: 0 2rem;
+}
+
+.space-around { 
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-productos-carrito {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.contenedor-descripcion-producto {
+    display: flex;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+}
+
+.contenedor-descripcion-producto p {
+    font-weight: 700;
+    font-size: 1.8rem;
+    max-width: 12rem;
+}
+
+.contenedor-descripcion-producto p:last-of-type {
+    margin-right: 0;
+}
+
+.hr-carrito {
+    max-width: 75rem;
+    background-color: black;
+    height: 0.2rem;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal {
+    background: #ffffff00 radial-gradient(ellipse at top left,#b466d259 0,#f9db9829 40%);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.subtotal p {
+    margin-left: 2rem;
+}
+
+.pagar {
+    background: #ffffff00 radial-gradient(ellipse at top left,#b466d259 0,#f9db9829 40%);
+    padding-bottom: 1rem;
+    max-height: 15;
+    border-radius: 2rem;
+}
+
+.pagar a {
+    margin: 0 2rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-eliminar {
+    margin: 0 2.5rem 1rem 0!important;
+}
+
+.alinear-boton-eliminar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.centrar-texto-eliminar {
+    display: flex;
+    justify-content: center;
+}
+
+.sin-productos {
+    color: #ec0000;
+}
+

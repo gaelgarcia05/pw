@@ -1,0 +1,27 @@
+.contenedor-boton {
+    /*display: flex;
+    justify-content: space-between;*/
+    align-items: center;
+}
+
+.contenedor-boton input {
+    min-width: 100%;
+    min-height: 3rem;
+}
+
+.contenedor-formulario-editar {
+    display: flex;
+}
+
+.alinear-boton-agregar {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group select {
+    width: 25rem;
+}
+
+.size {
+    width: 14.6rem !important;
+}

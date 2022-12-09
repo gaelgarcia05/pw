@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/FondoR2.jpg) no-repeat center top;
+    background-size: cover;
+    height: 105rem;
+}
+
+h2 {
+    font-weight: bold;
+    color: #f37171;
+    text-transform: uppercase;
+}
+
+.Registro label {
+    color: #f37171;
+    font-weight: bold;
+}
+
+.Registro legend {
+    font-weight: bold;
+    color: #f37171;
+    margin-bottom: 2rem;
+}
+.Registro input[type="submit"] {
+    border: none;
+    padding: 0 2rem;
+    outline: none;
+    height: 3rem;
+    background: #f37171;
+    color: #ffe9d5;
+    font-size: 1.8rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.Registro input:not([type="submit"]) {
+    background-color: #ffffff42 !important;
+    border-bottom: 0.6rem solid #f37171;
+}
+
+.Registro input::placeholder {
+    color: #800852;
+    font-weight: 700;
+}
+
+.Registro input[type="submit"]:active {
+    transform: scale(1.5rem);
+}
+
+.contenedor-registro {
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+}
+
+.contenedor-registro div {
+    width: -webkit-fill-available;
+    padding-right: 3rem;
+}
+
+.contenedor-registro label {
+    margin-bottom: .5rem;
+}
+
+.contenedor-registro div:last-of-type {
+    padding: 0 0 0 3rem;
+}
+
+.Registro input[type="submit"] {
+    margin-bottom: 3rem;
+
+}

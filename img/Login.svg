@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45mm" height="100m">
+
+    <circle cx="65" cy="75" r="120" fill="#7d00c8"/>
+    <text color="white" x="3" y="65" fill="black" font-size="45">
+        ALGAR
+    </text>
+
+</svg>

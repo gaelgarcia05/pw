@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-A-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylePHP.css">
+    <link rel="stylesheet" href="css/StyleRegistro.css">
+    <script lenguage="javascript">
+        /*
+                                let NombresReg = document.getElementById("Nombres").value;
+                                let ApellidosReg = document.getElementById("Apellidos").value;
+                                let CorreoReg = document.getElementById("Correo").value;
+                                let UsuarioReg = document.getElementById("NomUsuario").value;
+                                let ContraseñaReg = document.getElementById("Contraseña").value;
+                                let TelefonoReg = document.getElementById("Tel").value;
+                                */
+        function ValidacionRegistro() {
+            let NombresReg = document.forms["Registro"]["Nombre"].value;
+            let ApellidosReg = document.forms["Registro"]["Apellidos"].value;
+            let CorreoReg = document.forms["Registro"]["Correo"].value;
+            let UsuarioReg = document.forms["Registro"]["NomUsuario"].value;
+            let ContraseñaReg = document.forms["Registro"]["Contraseña"].value;
+            let TelefonoReg = document.forms["Registro"]["Telefono"].value;
+            console.log("Enviando Formulario...");
+
+            if (NombresReg == null || NombresReg.length == 0 || !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(NombresReg)) {
+                alert("Nombre no valido...");
+            }
+
+            if (ApellidosReg == null || ApellidosReg.length == 0 || !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(ApellidosReg)) {
+                alert("No se reconoce su Apellido...");
+            }
+
+            if (CorreoReg == null || CorreoReg.length == 0 || !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(CorreoReg)) {
+                alert("Utilize una direccion de correo valida...");
+                return false
+            }
+
+            if (UsuarioReg == null || UsuarioReg.length == 0 || !/^[a-zA-Z0-9\_\-]{4,16}$/.test(UsuarioReg)) {
+                alert("Nombre de usurio invalido...");
+                return false
+            }
+
+            if (ContraseñaReg == null || ContraseñaReg.length == 0 || !/^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/.test(ContraseñaReg)) {
+                alert("La contraseña debe contener de 8 a 16 caracteres y al menos una letra mayuscula y un dígito");
+                return false
+            }
+
+            if (TelefonoReg == null || TelefonoReg.length == 0 || !/^[55,33,81|0-9]{2}[0-9]{8}$/.test(TelefonoReg)) {
+                alert("Introduzca un numero de telefono valido...");
+
+                return false
+            }
+
+        }
+    </script>
+
+</head>
+
+<body background="img/FondoR2.jpg">
+<?php
+require('Header.php')
+?>
+
+    <main class="contenedor seccion-contacto contenido-centrado">
+        <h2 class="fw-400 centrar-texto">Bienvenido a ALGAR</h2>
+
+        <div class="Registro">
+            <form action="Registro.php" onsubmit="return ValidacionRegistro();" name="Registro" method="POST">
+                <div class="contenedor-registro">
+                    <div>
+                        <legend>Datos personales</legend>
+                        <Label for="Nombre">Nombres</Label>
+                        <input type="text" name="Nombre" id="Nombres" placeholder="Nombre">
+
+                        <label for="Apellidos">Apellidos</label>
+                        <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos">
+
+                        <label for="Telefono">Telefono</label>
+                        <input type="tel" name="Telefono" id="Tel" placeholder="Numero Telefonico">
+                    </div>
+                    <div>
+                        <legend>Informacion de la cuenta</legend>
+
+                        <label for="Correo">Correo Electronico</label>
+                        <input type="email" name="Correo" id="Correo" placeholder="Correo Electronico">
+
+                        <label for="Usuario">Nombre de Usuario</label>
+                        <input type="text" name="NomUsuario" id="NomUsuario" autocomplete="new-user" placeholder="Nombre de Usuario">
+
+                        <label for="Contraseña">Contraseña</label>
+                        <input type="password" name="Contraseña" id="Contraseña" autocomplete="new-password" placeholder="Contraseña">
+                    </div>
+                </div>
+                    <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </main>
+
+    <?php require('footer.php') ?>
+</body>
+
+</html>

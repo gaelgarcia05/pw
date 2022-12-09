@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" rx="15" ry="15" height="100" width="250" stroke="#7d00c8" stroke-width="5" fill="#ffffff00"></rect>
+    <text x="25" y="60" fill="#7d00c8" font-size="30" font-weight="150" font-family="IMPACT">
+        ALGAR Design
+    </text>
+</svg>
